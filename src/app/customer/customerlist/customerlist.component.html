@@ -1,1 +1,4 @@
 <p>customerlist works!</p>
+<li *ngFor="let customer of Customers, let i = index">
+  <a routerLink="../customer/detail/{{customer.index}}">{{ customer.name }}</a>
+</li>
